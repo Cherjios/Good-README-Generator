@@ -5,18 +5,47 @@ inquirer
     {
       type: "input",
       message: "What is your Github username?",
-      name: "name"
-    },
-    {
-      type: "checkbox",
-      message: "What languages do you know?",
-      choices:[ "HTML", "CSS", "JavaScript", "Python"],
-      name: "Languages"
+      name: "Username"
     },
     {
       type: "input",
-      message: "What is your preferred method of communication?",
-      name: "preferred method"
+      message: "What is your Repository Title?",
+      name: "Repository Title"
+    },
+    {
+      type: "input",
+      message: "What is your Repository Description?",
+      name: "Repository Description"
+    },
+    {
+      type: "input",
+      message: "Installation process?",
+      name: "Installation"
+    },
+    {
+      type: "input",
+      message: "Usage?",
+      name: "Usage"
+    },
+    {
+      type: "input",
+      message: "License?",
+      name: "License"
+    },
+    {
+      type: "input",
+      message: "Contributing?",
+      name: "Contribution"
+    },
+    {
+      type: "input",
+      message: "Test?",
+      name: "Test"
+    },
+    {
+      type: "input",
+      message: "Questions?",
+      name: "Questions"
     }
   ])
   .then(function(response) {
