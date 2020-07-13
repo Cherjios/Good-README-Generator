@@ -65,7 +65,9 @@ ${answers.RepositoryDescription}
 - [Questions](##Questions)
 
 ##  Installation
+\`\`\`
 ${answers.Installation}
+\`\`\`
 
 ## Usage
 ${answers.Usage}
