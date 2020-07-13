@@ -57,12 +57,12 @@ function generateHTML(answers) {
 ${answers.RepositoryDescription}
 
 ##  Table of Contents
-- Installation
-- Usage
-- License
-- Contributing
-- Tests
-- Questions
+- [Installation](##Installation)
+- [Usage](##Usage)
+- [License](##License)
+- [Contributing](##Contributing)
+- [Tests](##Tests)
+- [Questions](##Questions)
 
 ##  Installation
 ${answers.Installation}
@@ -89,7 +89,7 @@ async function init() {
 
     const READMEFile = generateHTML(answers);
 
-    await writeFileAsync("README1.md", READMEFile );
+    await writeFileAsync("README.md", READMEFile );
 
     console.log("Successfully wrote to README.md");
   } catch(err) {
