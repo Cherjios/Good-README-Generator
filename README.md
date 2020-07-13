@@ -1,8 +1,8 @@
 
   [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 
-# GOOD README	
-creaate a good readme file
+# Good Readme
+create an node application to generate a README.md
 
 ##  Table of Contents
 - [Installation](##Installation)
@@ -14,20 +14,20 @@ creaate a good readme file
 
 ##  Installation
 ```
-git clone www.github.com
+git clone git@github.com:Cherjios/Good-README-Generator.git, cd Good-README-Generator
 ```
 
 ## Usage
-here
+Node ReadmeGenerator.js
 
 ## License
-license here
+no needed 
 
 ## Contributing
 slopez0286@gmail.com
 
 ##  Tests
-no test
+no needed
 
 ## Questions
-    - paqito84 
+    - [Cherjios](https://github.com/Cherjios)

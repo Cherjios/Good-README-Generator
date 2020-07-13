@@ -82,7 +82,7 @@ ${answers.Contribution}
 ${answers.Test}
 
 ## Questions
-    - ${answers.Username} `;
+    - [${answers.Username}](https://github.com/${answers.Username})`;
 }
 
 async function init() {
