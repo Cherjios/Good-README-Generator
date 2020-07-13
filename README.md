@@ -18,7 +18,7 @@ git clone git@github.com:Cherjios/Good-README-Generator.git, cd Good-README-Gene
 ```
 
 ## Usage
-node ReadmeGenerator.js
+![gif](ReadmeGenerator.gif)
 
 ## License
 no license need it
