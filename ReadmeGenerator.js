@@ -76,13 +76,13 @@ ${answers.Usage}
 ${answers.License}
 
 ## Contributing
-${answers.Contribution}
+[${answers.Contribution}](https://github.com/${answers.Contribution})
 
 ##  Tests
 ${answers.Test}
 
 ## Questions
-    - [${answers.Username}](https://github.com/${answers.Username})`;
+ -[${answers.Username}](https://github.com/${answers.Username})`;
 }
 
 async function init() {
