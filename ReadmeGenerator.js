@@ -1,7 +1,11 @@
-var inquirer = require("inquirer");
+const inquirer = require("inquirer");
+const fs = require("fs");
+const util = require("util");
 
-inquirer
-  .prompt([
+const writeFileAsync = util.promisify(fs.writeFile);
+
+function promptUser() {
+  return inquirer.prompt([
     {
       type: "input",
       message: "What is your Github username?",
@@ -10,12 +14,12 @@ inquirer
     {
       type: "input",
       message: "What is your Repository Title?",
-      name: "Repository Title"
+      name: "RepositoryTitle"
     },
     {
       type: "input",
       message: "What is your Repository Description?",
-      name: "Repository Description"
+      name: "RepositoryDescription"
     },
     {
       type: "input",
@@ -42,29 +46,57 @@ inquirer
       message: "Test?",
       name: "Test"
     },
-    {
-      type: "input",
-      message: "Questions?",
-      name: "Questions"
-    }
-  ])
-  .then(function(response) {
-    console.log(response)
+  ]);
+}
 
-    if (response.confirm === response.password) {
-      console.log("Success!");
-    }
-    else {
-      console.log("You forgot your password already?!");
-    }
+function generateHTML(answers) {
+  return `
+  [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 
-    var fs = require("fs");
-    fs.writeFile("response.json", JSON.stringify(response, null,"\t") + "\n", function(err) {
+# ${answers.RepositoryTitle}
+${answers.RepositoryDescription}
 
-    if (err) {
-      return console.log(err);
-    }
-  
-  });
+##  Table of Contents
+- Installation
+- Usage
+- License
+- Contributing
+- Tests
+- Questions
 
-  });
+##  Installation
+${answers.Installation}
+
+## Usage
+${answers.Usage}
+
+## License
+${answers.License}
+
+## Contributing
+${answers.Contribution}
+
+##  Tests
+${answers.Test}
+
+## Questions
+    - ${answers.Username} `;
+}
+
+async function init() {
+  try {
+    const answers = await promptUser();
+
+    const READMEFile = generateHTML(answers);
+
+    await writeFileAsync("README1.md", READMEFile );
+
+    console.log("Successfully wrote to README.md");
+  } catch(err) {
+    console.log(err);
+  }
+}
+
+init();
+
+
