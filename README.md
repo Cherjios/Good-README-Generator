@@ -4,7 +4,7 @@
 # Good README
 Create an node application to Generate an Readme file
 
-##  Table of Contents
+## Table of Contents
 - [Installation](##Installation)
 - [Usage](##Usage)
 - [License](##License)
@@ -12,7 +12,7 @@ Create an node application to Generate an Readme file
 - [Tests](##Tests)
 - [Questions](##Questions)
 
-##  Installation
+## Installation
 ```
 git clone git@github.com:Cherjios/Good-README-Generator.git, cd Good-README-Generator
 ```
@@ -21,13 +21,13 @@ git clone git@github.com:Cherjios/Good-README-Generator.git, cd Good-README-Gene
 ![gif](ReadmeGenerator.gif)
 
 ## License
-no license need it
+No license need it
 
 ## Contributing
 [cherjios](https://github.com/cherjios)
 
 ##  Tests
-no test
+``` node ReadmeGenerator.js```
 
 ## Questions
  -[Cherjios](https://github.com/Cherjios)
